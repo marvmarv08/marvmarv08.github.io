@@ -1,6 +1,8 @@
 # Marvin Builds — Marvin Laurence Burgos
 
-A responsive student-developer portfolio built with HTML, CSS, and a small vanilla JavaScript enhancement for project filtering. It presents personal and academic projects through a light editorial layout, top navigation, and custom project cover illustrations.
+A responsive student-developer portfolio built with HTML, CSS, and a small vanilla JavaScript enhancement for project filtering. It presents personal and academic projects through a compact introduction, readable project rows, top navigation, and custom project cover illustrations.
+
+Design decisions and their primary sources are documented in [recruiter design research](docs/recruiter-design-research.md).
 
 ## Preview locally
 
@@ -20,7 +22,7 @@ Open <http://127.0.0.1:4175>. Stop the server with Ctrl+C.
 - Replace image files in `assets/` and `assets/projects/` when updating the supplied avatar or project covers.
 - Edit the four `.stack-group` lists in `index.html` to update Frontend, Backend & Hosting, Tools, and Storage. Stack icons are local SVG assets; see [icon sources](docs/stack-icons.md).
 - Keep project descriptions accurate and link only to real destinations. The email action opens the visitor's mail application; there is no contact-form backend.
-- The five selected projects are ClassPulse, StudyNest, Marvin Builds, MarvProx, and VoxMate.
+- The five selected projects are StudyNest, VoxMate, ClassPulse, MarvProx, and Marvin Builds.
 - The generated covers are concept illustrations, labeled as artwork rather than product screenshots. Prompts and asset notes are recorded in [project artwork](docs/project-artwork.md).
 
 ## Publishing

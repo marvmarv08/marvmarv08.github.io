@@ -23,3 +23,9 @@ Project filters are a progressive enhancement: the complete project list is pres
 ## Keeping a stack easy to scan
 
 An icon grid benefits from plain text labels: a visitor should not need to recognize a logo to know the tool. Separate storage from backend/hosting so technologies such as SQLite and Vercel have clear roles. Local SVG files keep the grid sharp without adding remote requests or a runtime icon dependency.
+
+## Designing around a visitor's questions
+
+A portfolio should quickly answer who the developer is, what they can show, and how to contact them. Keeping important information early and using plain section headings helps visitors scan. A smaller avatar and consistent project rows leave more room for readable descriptions and direct source links.
+
+Research is a reason for a design decision, not proof that a particular site improves hiring outcomes. Preserve honest project limitations and distinguish working previews, prototypes, and concept artwork. Browser checks confirm layout and interactions; they do not prove every external application's features work.
