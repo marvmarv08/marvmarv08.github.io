@@ -23,7 +23,11 @@ Open <http://127.0.0.1:4175>. Stop the server with Ctrl+C.
 
 GitHub stores the source and edit history. GitHub Pages publishes only the explicit public files prepared by the Pages workflow. Project notes and internal instructions are excluded from the website artifact.
 
-The intended address is <https://marvmarv08.github.io/>; deployment verification is recorded after publication.
+Live website: <https://marvmarv08.github.io/>.
+
+Source repository: <https://github.com/marvmarv08/marvmarv08.github.io>.
+
+The initial Pages deployment succeeded and the public page passed browser checks at 360px, 768px, and 1440px, including keyboard navigation, disabled JavaScript, and reduced motion. Deployed page, stylesheet, and icon matched the reviewed source.
 
 The workflow follows GitHub's [custom Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 
