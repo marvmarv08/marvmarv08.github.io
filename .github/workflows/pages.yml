@@ -22,10 +22,13 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Prepare public files only
         run: |
-          mkdir -p _site/assets/projects _site/reviewer-organizer
+          mkdir -p _site/assets/projects _site/assets/stack _site/reviewer-organizer
           cp -- index.html styles.css script.js _site/
           cp -- assets/favicon.svg assets/marvin-avatar.jpg _site/assets/
           cp -- assets/projects/classpulse.webp assets/projects/studynest.webp assets/projects/marvinbuilds.webp assets/projects/marvprox.webp assets/projects/voxmate.webp _site/assets/projects/
+          for stack_icon in nextdotjs react typescript vite tailwindcss convex nodedotjs express python vercel codex claude git github docker vitest postgresql supabase mysql sqlite indexeddb; do
+            cp -- "assets/stack/$stack_icon.svg" _site/assets/stack/
+          done
           cp -- reviewer-organizer/index.html reviewer-organizer/redirect.js reviewer-organizer/sw.js _site/reviewer-organizer/
           touch _site/.nojekyll
       - name: Upload website artifact

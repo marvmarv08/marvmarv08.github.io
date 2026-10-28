@@ -18,6 +18,7 @@ Open <http://127.0.0.1:4175>. Stop the server with Ctrl+C.
 - Edit `styles.css` to change colors, spacing, typography, and responsive layouts.
 - Edit `script.js` to change the progressive project-filter behavior. All projects and native navigation remain available when JavaScript is disabled.
 - Replace image files in `assets/` and `assets/projects/` when updating the supplied avatar or project covers.
+- Edit the four `.stack-group` lists in `index.html` to update Frontend, Backend & Hosting, Tools, and Storage. Stack icons are local SVG assets; see [icon sources](docs/stack-icons.md).
 - Keep project descriptions accurate and link only to real destinations. The email action opens the visitor's mail application; there is no contact-form backend.
 - The five selected projects are ClassPulse, StudyNest, Marvin Builds, MarvProx, and VoxMate.
 - The generated covers are concept illustrations, labeled as artwork rather than product screenshots. Prompts and asset notes are recorded in [project artwork](docs/project-artwork.md).

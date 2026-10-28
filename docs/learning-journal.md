@@ -19,3 +19,7 @@ A GitHub repository rename also changes a project Pages path. StudyNest keeps it
 Artwork can communicate a project's purpose without being an actual application screenshot. Labeling concept covers keeps the presentation honest. The generated originals are preserved, while smaller WebP copies reduce loading cost without changing the composition.
 
 Project filters are a progressive enhancement: the complete project list is present in HTML, and JavaScript adds filtering only when available. A sticky header also needs enough anchor offset so clicking a section link does not hide its heading. Both the enhanced and JavaScript-disabled experiences need browser checks.
+
+## Keeping a stack easy to scan
+
+An icon grid benefits from plain text labels: a visitor should not need to recognize a logo to know the tool. Separate storage from backend/hosting so technologies such as SQLite and Vercel have clear roles. Local SVG files keep the grid sharp without adding remote requests or a runtime icon dependency.

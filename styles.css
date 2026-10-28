@@ -102,13 +102,15 @@ h2 { font-size: clamp(30px, 3vw, 42px); letter-spacing: -1.7px; font-weight: 650
 .project-endnote h3 { margin-bottom: 16px; font-size: 28px; letter-spacing: -1px; line-height: 1.2; font-weight: 600; }
 .project-endnote p { max-width: 300px; font-size: 12px; color: var(--muted); line-height: 1.9; margin-bottom: 11px; }
 
-.skills-section { background: #f4f7f1; }
-.skills-table { border-top: 1px solid #d2ddce; }
-.skill-row { display: grid; grid-template-columns: 230px 1fr; align-items: start; gap: 25px; padding: 24px 0; border-bottom: 1px solid #d2ddce; }
-.skill-row h3 { font-weight: 500; font-size: 13px; margin: 4px 0 0; }
-.skill-row h3 > span { color: #71947c; margin-right: 14px; }
-.skill-row ul { display: flex; flex-wrap: wrap; gap: 10px 20px; list-style: none; margin: 0; padding: 0; }
-.skill-row li { font-size: 13px; color: #435d4b; }
+.skills-section { background: var(--paper); }
+.stack-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 44px 72px; padding-top: 29px; border-top: 1px solid var(--line); }
+.stack-group { min-width: 0; }
+.stack-group h3 { color: var(--muted); font: 10px/1.6 var(--mono); letter-spacing: 1px; text-transform: uppercase; margin: 0 0 24px; }
+.stack-items { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 25px 16px; list-style: none; margin: 0; padding: 0; }
+.stack-item { display: flex; flex-direction: column; align-items: center; gap: 9px; min-width: 0; text-align: center; }
+.stack-icon { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid #d6ded3; border-radius: 9px; background: #e9eee7; }
+.stack-icon img { display: block; width: 24px; height: 24px; object-fit: contain; opacity: .88; }
+.stack-item > span:last-child { font-size: 13px; line-height: 1.5; color: #25372b; }
 .about-section { display: grid; grid-template-columns: 1.25fr 1fr; gap: 75px; align-items: center; }
 .about-copy h2 { margin-bottom: 24px; }
 .about-copy > p:not(.section-kicker) { font-size: 13px; color: var(--muted); line-height: 1.95; margin-bottom: 16px; }
@@ -196,9 +198,9 @@ h2 { font-size: clamp(30px, 3vw, 42px); letter-spacing: -1.7px; font-weight: 650
   .project-endnote { min-height: 260px; padding: 27px; }
   .project-endnote h3 { font-size: 25px; }
   .project-endnote p { font-size: 11px; }
-  .skill-row { grid-template-columns: 175px 1fr; gap: 20px; padding-block: 21px; }
-  .skill-row ul { gap: 8px 15px; }
-  .skill-row li { font-size: 12px; }
+  .stack-grid { gap: 36px 28px; }
+  .stack-items { gap: 23px 10px; }
+  .stack-item > span:last-child { font-size: 12px; }
   .about-section { grid-template-columns: 1fr; gap: 31px; }
   .education-card { max-width: 440px; }
   .contact-section h2 { font-size: 53px; letter-spacing: -2.7px; }
@@ -236,9 +238,9 @@ h2 { font-size: clamp(30px, 3vw, 42px); letter-spacing: -1.7px; font-weight: 650
   .project-links .text-link { font-size: 11px; }
   .cover-label { font-size: 10px; }
   .project-endnote { min-height: 250px; padding: 30px; }
-  .skill-row { grid-template-columns: 1fr; gap: 15px; }
-  .skill-row h3 { font-size: 12px; }
-  .skill-row li { font-size: 12px; }
+  .stack-grid { grid-template-columns: 1fr; gap: 34px; }
+  .stack-group h3 { margin-bottom: 20px; }
+  .stack-items { gap: 23px 12px; }
   .contact-section h2 { font-size: 49px; }
   .contact-email { font-size: clamp(15px, 4.7vw, 23px); letter-spacing: -.5px; gap: 10px; }
   .contact-email > span { font-size: 18px; }
