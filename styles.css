@@ -155,7 +155,7 @@ h2 { font-size: clamp(30px, 3vw, 42px); letter-spacing: -1.7px; font-weight: 650
 }
 
 @media (max-width: 760px) {
-  html { scroll-padding-top: 136px; }
+  html { scroll-padding-top: 160px; }
   .header-inner { display: grid; grid-template-columns: 1fr auto; padding: 14px 22px 0; gap: 10px 18px; }
   .brand-name { font-size: 18px; }
   .brand-role { font-size: 10px; }
