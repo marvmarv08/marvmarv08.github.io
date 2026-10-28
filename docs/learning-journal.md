@@ -9,3 +9,7 @@ GitHub stores source files and their history. GitHub Pages serves a selected set
 Portfolio descriptions should reflect work that can be demonstrated. Project technologies were checked against the public Reviewer Organizer repository. A private project can have a short, truthful description without exposing its source code. Decorative artwork is identified as an illustration so it cannot be mistaken for a product screenshot.
 
 Responsive verification means inspecting the page at different screen widths, not merely making the browser smaller once. Checking keyboard navigation, disabled JavaScript, reduced motion, and real links catches usability problems that a screenshot alone can miss.
+
+## Renaming a hosted project
+
+A GitHub repository rename also changes a project Pages path. StudyNest keeps its established email callback and a same-origin redirect so older links can still reach the new address. Branding can change while database names and backup/import format identifiers stay stable, preserving existing data.

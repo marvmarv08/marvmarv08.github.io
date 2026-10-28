@@ -22,9 +22,10 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Prepare public files only
         run: |
-          mkdir -p _site/assets
+          mkdir -p _site/assets _site/reviewer-organizer
           cp -- index.html styles.css _site/
           cp -- assets/favicon.svg _site/assets/
+          cp -- reviewer-organizer/index.html reviewer-organizer/redirect.js reviewer-organizer/sw.js _site/reviewer-organizer/
           touch _site/.nojekyll
       - name: Upload website artifact
         uses: actions/upload-pages-artifact@v4

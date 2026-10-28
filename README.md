@@ -1,4 +1,4 @@
-# Marvin Laurence Burgos — Developer Portfolio
+# Marvin Builds — Marvin Laurence Burgos
 
 A responsive portfolio presenting selected projects and the technologies behind them, built with HTML and CSS.
 
@@ -17,7 +17,7 @@ Open <http://127.0.0.1:4175>. Stop the server with Ctrl+C.
 - Edit `index.html` to change the introduction, project descriptions, skills, and links.
 - Edit `styles.css` to change colors, spacing, typography, and responsive layouts.
 - Keep project descriptions accurate and link only to real destinations. Optional contact details and a resume are omitted until supplied.
-- The Reviewer Organizer artwork is a project illustration, not a screenshot of its interface.
+- The StudyNest artwork is a project illustration, not a screenshot of its interface.
 
 ## Publishing
 
@@ -34,3 +34,11 @@ The workflow follows GitHub's [custom Pages workflow documentation](https://docs
 ## Checks
 
 Check phone, tablet, and desktop layouts, keyboard navigation, reduced motion, link destinations, and the Pages artifact allowlist before publishing. Run `git diff --check` to catch whitespace errors. The page works without JavaScript and uses no external fonts, runtime API calls, or tracking.
+
+## Legacy StudyNest links
+
+The `reviewer-organizer/` compatibility page forwards old bookmarks and the established email callback path to `/StudyNest/`, preserving query strings and fragments on the same origin. It never reads, stores, or logs callback values. Its three public files are explicitly included in the Pages artifact.
+
+A scoped retirement worker also moves returning tabs away from the old cached shell without deleting study storage.
+
+Run `node --test tests/*.test.cjs` to verify the redirect contract.
