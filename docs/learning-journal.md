@@ -13,3 +13,9 @@ Responsive verification means inspecting the page at different screen widths, no
 ## Renaming a hosted project
 
 A GitHub repository rename also changes a project Pages path. StudyNest keeps its established email callback and a same-origin redirect so older links can still reach the new address. Branding can change while database names and backup/import format identifiers stay stable, preserving existing data.
+
+## Designing a useful project showcase
+
+Artwork can communicate a project's purpose without being an actual application screenshot. Labeling concept covers keeps the presentation honest. The generated originals are preserved, while smaller WebP copies reduce loading cost without changing the composition.
+
+Project filters are a progressive enhancement: the complete project list is present in HTML, and JavaScript adds filtering only when available. A sticky header also needs enough anchor offset so clicking a section link does not hide its heading. Both the enhanced and JavaScript-disabled experiences need browser checks.

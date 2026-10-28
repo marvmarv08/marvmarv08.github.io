@@ -3,114 +3,146 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#0b1120">
-    <meta name="description" content="Marvin Laurence Burgos — Full Stack Developer and Web Developer. Explore practical web projects, the tools behind them, and the thinking that connects it all.">
-    <title>Marvin Builds — Marvin Laurence Burgos</title>
+    <meta name="theme-color" content="#f8faf7">
+    <meta name="color-scheme" content="light">
+    <meta name="description" content="Marvin Laurence Burgos — Software Developer and third-year BS Information Technology student at Batangas State University. Open to internships and freelance projects.">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; base-uri 'self'; form-action 'none'; object-src 'none'">
+    <meta property="og:title" content="Marvin Builds — Software Developer">
+    <meta property="og:description" content="Personal projects, practical ideas, and a growing software-development journey.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marvmarv08.github.io/">
+    <title>Marvin Builds — Marvin Laurence Burgos, Software Developer</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header wrap">
-      <a class="wordmark" href="#home" aria-label="Marvin Builds — Marvin Laurence Burgos, home">Marvin Builds<span>.</span></a>
-      <nav aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact <span aria-hidden="true">↗</span></a>
-      </nav>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#home" aria-label="Marvin Builds, home"><span class="brand-name">Marvin Builds<span class="accent">.</span></span><span class="brand-role">Software Developer</span></a>
+        <nav aria-label="Main navigation"><a href="#work">Work</a><a href="#skills">Skills</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+        <a class="header-contact" href="mailto:burgosmarvin79@gmail.com">Let's talk <span aria-hidden="true">↗</span></a>
+      </div>
     </header>
-
-    <main id="main">
-      <section id="home" class="hero wrap" aria-labelledby="hero-title">
+    <main id="main" class="page-shell">
+      <section id="home" class="hero" aria-labelledby="hero-title">
+        <div class="portrait-column">
+          <div class="portrait-heading"><span>01 / A LITTLE PERSONALITY</span><span class="tiny-cross" aria-hidden="true">✦</span></div>
+          <figure class="portrait-frame"><img src="assets/marvin-avatar.jpg" alt="Marvin's black-and-teal illustrated avatar" width="474" height="842" fetchpriority="high"></figure>
+          <div class="portrait-footer"><span>CURIOUS MIND. PRACTICAL IDEAS.</span><span aria-hidden="true">↗</span></div>
+        </div>
         <div class="hero-copy">
-          <p class="eyebrow"><span class="signal" aria-hidden="true"></span> IDEAS INTO INTERFACES. LOGIC INTO EXPERIENCES.</p>
-          <h1 id="hero-title">Marvin<br>Laurence<br><span>Burgos<span class="name-dot">.</span></span></h1>
-          <p class="role">Full Stack Developer <span aria-hidden="true">/</span> Web Developer</p>
-          <p class="hero-description">Building practical web applications with thoughtful design and useful features.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
-            <a class="text-link" href="https://github.com/marvmarv08">GitHub profile <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-        <div class="hero-art" aria-hidden="true">
-          <div class="art-topline"><span>THE DEVELOPER'S CANVAS</span><span>01 / MLB</span></div>
-          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-          <div class="art-monogram">M<span>L</span>B<span class="monogram-dot">.</span></div>
-          <div class="layer layer-interface"><span class="layer-icon">&lt;/&gt;</span><span>Interface</span><span class="layer-detail">The experience</span></div>
-          <div class="layer layer-logic"><span class="layer-icon">{ }</span><span>Logic</span><span class="layer-detail">The connection</span></div>
-          <div class="layer layer-data"><span class="layer-icon">▤</span><span>Data</span><span class="layer-detail">The foundation</span></div>
-          <div class="art-bottomline"><span>THOUGHTFULLY CONNECTED</span><span>↗</span></div>
-        </div>
-        <div class="hero-bottom"><span>DESIGN WITH PURPOSE. BUILD WITH CURIOSITY.</span><a href="#about">A little about me <span aria-hidden="true">↓</span></a></div>
-      </section>
-
-      <section id="about" class="section wrap" aria-labelledby="about-title">
-        <div class="section-label"><span>01 / ABOUT</span><span class="small-rule"></span></div>
-        <div class="about-grid">
-          <h2 id="about-title">Curious by nature.<br><span class="muted">A builder by choice.</span></h2>
-          <div class="about-copy">
-            <p>I'm Marvin, a developer who enjoys turning everyday problems into useful web applications. I work across the interface and the application behind it, connecting what people see with how things work.</p>
-            <p>My projects are where I put ideas into practice: organizing study materials, exploring voice interactions, and learning through the process of building. I care about clear interfaces, practical features, and getting the details right.</p>
-            <a class="text-link" href="https://github.com/marvmarv08">Follow what I'm building <span aria-hidden="true">↗</span></a>
-          </div>
-        </div>
-        <div class="approach-grid">
-          <article class="approach"><span class="approach-number">01</span><h3>Web experiences</h3><p>Interfaces that make an application's purpose clear and its features easy to find.</p></article>
-          <article class="approach"><span class="approach-number">02</span><h3>Connected applications</h3><p>Bringing the interface, application logic, and data together into a useful workflow.</p></article>
-          <article class="approach"><span class="approach-number">03</span><h3>Practical tools</h3><p>Projects shaped around real activities, with room to learn, test, and improve.</p></article>
+          <p class="eyebrow">SOFTWARE DEVELOPER / BSIT STUDENT</p>
+          <h1 id="hero-title">I'm Marvin<br>Laurence Burgos<span class="accent">.</span></h1>
+          <p class="hero-lead">Learning, building,<br><span>and making ideas useful.</span></p>
+          <p class="hero-description">Third-year BS Information Technology student at Batangas State University, building practical software through personal and school projects.</p>
+          <p class="availability"><span class="status-dot" aria-hidden="true"></span> Open to internships &amp; freelance projects</p>
+          <div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="text-link" href="mailto:burgosmarvin79@gmail.com">Get in touch <span aria-hidden="true">↗</span></a></div>
         </div>
       </section>
+      <div class="quick-facts" aria-label="At a glance">
+        <div><span class="fact-label">THE JOURNEY</span><strong>3rd-year BSIT student</strong><span>Batangas State University</span></div>
+        <div><span class="fact-label">THE WORK</span><strong>5 selected projects</strong><span>Personal ideas &amp; school projects</span></div>
+        <div><span class="fact-label">THE MINDSET</span><strong>Learn. Build. Improve.</strong><span>One practical problem at a time</span></div>
+      </div>
+      <section id="work" class="section projects-section" aria-labelledby="work-title">
+        <div class="section-heading"><div><p class="section-kicker">01 / SELECTED WORK</p><h2 id="work-title">Ideas, made tangible<span class="accent">.</span></h2></div><p>Personal projects and school work.<br>A little curiosity in every build.</p></div>
+        <div class="project-toolbar" hidden>
+          <div class="project-filters" role="group" aria-label="Filter projects"><button type="button" data-filter="all" aria-pressed="true">All projects</button><button type="button" data-filter="web" aria-pressed="false">Web applications</button><button type="button" data-filter="tools" aria-pressed="false">Tools &amp; experiments</button></div>
+          <p class="project-count" role="status" aria-live="polite">Showing 5 projects</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card" data-category="web" aria-labelledby="classpulse-title">
+            <a class="project-cover" href="https://github.com/cjmarvteam/ClassPulse" aria-label="Explore ClassPulse">
+              <img src="assets/projects/classpulse.webp" alt="ClassPulse concept artwork with a blue calendar, course folder, and yellow notification bell" width="1536" height="1024" loading="lazy" decoding="async">
+              <span class="cover-label">Cover artwork</span><span class="cover-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-meta"><span>01 / COURSEWORK &amp; REMINDERS</span><span class="project-status">Academic project</span></div>
+            <h3 id="classpulse-title">ClassPulse</h3>
+            <p>A Google Classroom activity organizer for tracking coursework, upcoming deadlines, and automated reminders.</p>
+            <ul class="tags" aria-label="ClassPulse technologies"><li>React</li><li>TypeScript</li><li>Express</li></ul>
+            <div class="project-links"><a class="text-link" href="https://github.com/cjmarvteam/ClassPulse">View source <span aria-hidden="true">↗</span></a><a class="text-link secondary-link" href="https://frontend-delta-drab-98.vercel.app">Interface preview <span aria-hidden="true">↗</span></a></div>
+            <p class="project-note">Frontend preview available; backend deployment is currently unavailable.</p>
+          </article>
 
-      <section id="work" class="section work-section wrap" aria-labelledby="work-title">
-        <div class="section-label"><span>02 / SELECTED WORK</span><span class="small-rule"></span></div>
-        <div class="section-heading"><h2 id="work-title">Ideas, put to work<span class="accent">.</span></h2><p>A closer look at what I'm building.</p></div>
-        <article class="featured-project">
-          <div class="project-art" aria-hidden="true">
-            <div class="illustration-label"><span>STUDYNEST</span><span>STUDY / ORGANIZE / PRACTICE</span></div>
-            <div class="study-stack">
-              <div class="study-sheet sheet-back"></div>
-              <div class="study-sheet sheet-middle"></div>
-              <div class="study-sheet sheet-front"><span class="sheet-symbol">S<span>n</span></span><span class="sheet-line"></span><span class="sheet-line line-short"></span><span class="sheet-line"></span><div class="sheet-tags"><i></i><i></i><i></i></div></div>
-              <div class="study-badge"><span>✦</span> A little more organized.</div>
-            </div>
-            <div class="illustration-footer"><span>PROJECT ILLUSTRATION</span><span>01</span></div>
-          </div>
-          <div class="project-copy">
-            <p class="eyebrow">FEATURED PROJECT <span class="project-status">In development</span></p>
-            <h3>StudyNest</h3>
-            <p>A focused study organizer for keeping subjects, PDF reviewers, notes, question banks, and learning progress in one place.</p>
-            <ul class="project-points"><li>Organize study resources by subject</li><li>Practice with questions and track mastery</li><li>Keep a record of study and test activity</li></ul>
-            <ul class="tags" aria-label="Project technologies"><li>React</li><li>TypeScript</li><li>IndexedDB</li></ul>
-            <div class="project-links"><a class="text-link" href="https://marvmarv08.github.io/StudyNest/">Open project <span aria-hidden="true">↗</span></a><a class="text-link secondary-link" href="https://github.com/marvmarv08/StudyNest">View source <span aria-hidden="true">↗</span></a></div>
-          </div>
-        </article>
-        <article class="secondary-project">
-          <div class="voice-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
-          <div><p class="eyebrow">ANOTHER EXPLORATION</p><h3>VoxMate</h3><p>A cross-platform voice assistant project exploring personalization and machine learning.</p></div>
-          <span class="private-label">Private project</span>
-        </article>
-      </section>
+          <article class="project-card" data-category="web" aria-labelledby="studynest-title">
+            <a class="project-cover" href="https://marvmarv08.github.io/StudyNest/" aria-label="Explore StudyNest">
+              <img src="assets/projects/studynest.webp" alt="StudyNest concept artwork with an open book, layered notes, and a mint folder" width="1536" height="1024" loading="lazy" decoding="async">
+              <span class="cover-label">Cover artwork</span><span class="cover-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-meta"><span>02 / STUDY &amp; ORGANIZATION</span><span class="project-status status-live"><span class="status-dot" aria-hidden="true"></span> Web app</span></div>
+            <h3 id="studynest-title">StudyNest</h3>
+            <p>A study workspace for subjects, PDF reviewers, notes, practice questions, and learning progress—all brought together.</p>
+            <ul class="tags" aria-label="StudyNest technologies"><li>React</li><li>TypeScript</li><li>Supabase</li></ul>
+            <div class="project-links"><a class="text-link" href="https://marvmarv08.github.io/StudyNest/">Open app <span aria-hidden="true">↗</span></a><a class="text-link secondary-link" href="https://github.com/marvmarv08/StudyNest">View source <span aria-hidden="true">↗</span></a></div>
+          </article>
 
-      <section id="skills" class="section wrap" aria-labelledby="skills-title">
-        <div class="section-label"><span>03 / THE TOOLKIT</span><span class="small-rule"></span></div>
-        <div class="skills-grid">
-          <div><h2 id="skills-title">The tools<br>behind the work<span class="accent">.</span></h2><p class="section-description">Technologies used in my projects, brought together to build for the web.</p></div>
-          <div class="skill-groups">
-            <div class="skill-group"><h3><span>01</span> Interface &amp; interaction</h3><ul class="skill-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li><li>React</li></ul></div>
-            <div class="skill-group"><h3><span>02</span> Data &amp; application tools</h3><ul class="skill-list"><li>Supabase</li><li>IndexedDB</li><li>Dexie</li></ul></div>
-            <div class="skill-group"><h3><span>03</span> Development workflow</h3><ul class="skill-list"><li>Git</li><li>GitHub</li><li>Vite</li><li>Vitest</li></ul></div>
-          </div>
+          <article class="project-card" data-category="web" aria-labelledby="marvinbuilds-title">
+            <a class="project-cover" href="https://github.com/marvmarv08/marvmarv08.github.io" aria-label="Explore Marvin Builds">
+              <img src="assets/projects/marvinbuilds.webp" alt="Marvin Builds concept artwork with a portfolio canvas, project cards, and teal code brackets" width="1536" height="1024" loading="lazy" decoding="async">
+              <span class="cover-label">Cover artwork</span><span class="cover-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-meta"><span>03 / PERSONAL PORTFOLIO</span><span class="project-status">This website</span></div>
+            <h3 id="marvinbuilds-title">Marvin Builds</h3>
+            <p>A personal home for selected projects, the tools behind them, and a growing software-development journey.</p>
+            <ul class="tags" aria-label="Marvin Builds technologies"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+            <div class="project-links"><a class="text-link" href="https://github.com/marvmarv08/marvmarv08.github.io">View source <span aria-hidden="true">↗</span></a></div>
+          </article>
+
+          <article class="project-card" data-category="tools" aria-labelledby="marvprox-title">
+            <a class="project-cover" href="https://github.com/marvmarv08/MarvProx" aria-label="Explore MarvProx">
+              <img src="assets/projects/marvprox.webp" alt="MarvProx concept artwork with glowing teal inventory cubes and a protective shield" width="1536" height="1024" loading="lazy" decoding="async">
+              <span class="cover-label cover-label-dark">Cover artwork</span><span class="cover-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-meta"><span>04 / INVENTORY &amp; SIMULATION</span><span class="project-status">Offline prototype</span></div>
+            <h3 id="marvprox-title">MarvProx</h3>
+            <p>An offline inventory prototype with protected selection, drop previews, simulated batch actions, and separate read-only native research.</p>
+            <ul class="tags" aria-label="MarvProx technologies"><li>JavaScript</li><li>C++</li><li>Windows</li></ul>
+            <div class="project-links"><a class="text-link" href="https://github.com/marvmarv08/MarvProx">View source <span aria-hidden="true">↗</span></a></div>
+            <p class="project-note">Sample inventory only; live game connectivity remains unverified.</p>
+          </article>
+
+          <article class="project-card" data-category="tools" aria-labelledby="voxmate-title">
+            <a class="project-cover" href="https://github.com/marvmarv08/VoxMate" aria-label="Explore VoxMate">
+              <img src="assets/projects/voxmate.webp" alt="VoxMate concept artwork with a lavender microphone, flowing waveform, and calendar tile" width="1536" height="1024" loading="lazy" decoding="async">
+              <span class="cover-label">Cover artwork</span><span class="cover-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="project-meta"><span>05 / VOICE &amp; PERSONAL SCHEDULES</span><span class="project-status">Local-first MVP</span></div>
+            <h3 id="voxmate-title">VoxMate</h3>
+            <p>A local-first voice assistant for organizing one-time and recurring weekly schedules, built around a focused personal workflow.</p>
+            <ul class="tags" aria-label="VoxMate technologies"><li>React</li><li>TypeScript</li><li>Vite</li></ul>
+            <div class="project-links"><a class="text-link" href="https://github.com/marvmarv08/VoxMate">View source <span aria-hidden="true">↗</span></a></div>
+          </article>
+          <aside class="project-endnote"><span class="endnote-symbol" aria-hidden="true">&lt;/&gt;</span><h3>Always something<br>new to figure out.</h3><p>These projects are part of how I learn: start with a problem, build a working idea, and keep improving.</p><a class="text-link" href="https://github.com/marvmarv08">More on GitHub <span aria-hidden="true">↗</span></a></aside>
         </div>
       </section>
-
-      <section id="contact" class="contact-section wrap" aria-labelledby="contact-title">
-        <p class="eyebrow">04 / LET'S CONNECT</p>
-        <h2 id="contact-title">Good work starts<br>with a conversation<span class="accent">.</span></h2>
-        <div class="contact-bottom"><p>Interested in my work?<br>Explore my projects and connect with me on GitHub.</p><a class="button button-primary" href="https://github.com/marvmarv08">Find me on GitHub <span aria-hidden="true">↗</span></a></div>
+      <section id="skills" class="section skills-section" aria-labelledby="skills-title">
+        <div class="section-heading"><div><p class="section-kicker">02 / THE TOOLKIT</p><h2 id="skills-title">Tools behind the ideas<span class="accent">.</span></h2></div><p>Technologies used across my projects.<br>Growing through hands-on practice.</p></div>
+        <div class="skills-table">
+          <div class="skill-row"><h3><span aria-hidden="true">↗</span> Frontend</h3><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>TypeScript</li><li>React</li></ul></div>
+          <div class="skill-row"><h3><span aria-hidden="true">↗</span> Backend &amp; data</h3><ul><li>Node.js</li><li>Express</li><li>PHP</li><li>MySQL</li><li>PostgreSQL</li><li>Supabase</li></ul></div>
+          <div class="skill-row"><h3><span aria-hidden="true">↗</span> Development tools</h3><ul><li>Git</li><li>GitHub</li><li>Vite</li><li>Docker</li><li>Vitest</li></ul></div>
+        </div>
+      </section>
+      <section id="about" class="section about-section" aria-labelledby="about-title">
+        <div class="about-copy">
+          <p class="section-kicker">03 / A LITTLE ABOUT ME</p><h2 id="about-title">Learning by building<span class="accent">.</span></h2>
+          <p>I'm Marvin Laurence Burgos, a third-year BS Information Technology student at Batangas State University with a focus on software development.</p>
+          <p>My experience comes from personal and school projects. I enjoy turning an idea into something useful, connecting interfaces with application logic, and learning what makes software work along the way.</p>
+          <p>I'm open to internships and freelance projects where I can contribute, learn from others, and keep improving my skills.</p>
+        </div>
+        <div class="education-card"><div class="education-icon" aria-hidden="true">↗</div><p class="eyebrow">CURRENTLY LEARNING</p><h3>BS Information<br>Technology</h3><p>Batangas State University</p><span class="education-year">Third-year college student</span><div class="education-bottom"><span class="status-dot" aria-hidden="true"></span> Personal &amp; academic projects</div></div>
+      </section>
+      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <p class="section-kicker">04 / LET'S CONNECT</p><p class="availability"><span class="status-dot" aria-hidden="true"></span> Open to internships &amp; freelance projects</p>
+        <h2 id="contact-title">Have something<br>in mind<span class="accent">?</span></h2>
+        <p>I'd love to hear about your project or an opportunity to learn and contribute.</p>
+        <a class="contact-email" href="mailto:burgosmarvin79@gmail.com">burgosmarvin79@gmail.com <span aria-hidden="true">↗</span></a>
+        <div class="contact-links"><a class="text-link" href="mailto:burgosmarvin79@gmail.com">Send an email <span aria-hidden="true">↗</span></a><a class="text-link" href="https://github.com/marvmarv08">Find me on GitHub <span aria-hidden="true">↗</span></a></div>
       </section>
     </main>
-
-    <footer class="site-footer wrap"><span>Marvin Laurence Burgos</span><span>Built with curiosity. Made for the web.</span><a href="#home">Back to top <span aria-hidden="true">↑</span></a></footer>
+    <footer class="site-footer"><div><a class="footer-brand" href="#home">Marvin Builds<span class="accent">.</span></a><span>© 2026 Marvin Laurence Burgos</span></div><p>Curiosity in progress.</p><a class="back-top" href="#home">Back to top <span aria-hidden="true">↑</span></a></footer>
   </body>
 </html>

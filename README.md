@@ -1,6 +1,6 @@
 # Marvin Builds — Marvin Laurence Burgos
 
-A responsive portfolio presenting selected projects and the technologies behind them, built with HTML and CSS.
+A responsive student-developer portfolio built with HTML, CSS, and a small vanilla JavaScript enhancement for project filtering. It presents personal and academic projects through a light editorial layout, top navigation, and custom project cover illustrations.
 
 ## Preview locally
 
@@ -16,8 +16,11 @@ Open <http://127.0.0.1:4175>. Stop the server with Ctrl+C.
 
 - Edit `index.html` to change the introduction, project descriptions, skills, and links.
 - Edit `styles.css` to change colors, spacing, typography, and responsive layouts.
-- Keep project descriptions accurate and link only to real destinations. Optional contact details and a resume are omitted until supplied.
-- The StudyNest artwork is a project illustration, not a screenshot of its interface.
+- Edit `script.js` to change the progressive project-filter behavior. All projects and native navigation remain available when JavaScript is disabled.
+- Replace image files in `assets/` and `assets/projects/` when updating the supplied avatar or project covers.
+- Keep project descriptions accurate and link only to real destinations. The email action opens the visitor's mail application; there is no contact-form backend.
+- The five selected projects are ClassPulse, StudyNest, Marvin Builds, MarvProx, and VoxMate.
+- The generated covers are concept illustrations, labeled as artwork rather than product screenshots. Prompts and asset notes are recorded in [project artwork](docs/project-artwork.md).
 
 ## Publishing
 
@@ -27,7 +30,7 @@ Live website: <https://marvmarv08.github.io/>.
 
 Source repository: <https://github.com/marvmarv08/marvmarv08.github.io>.
 
-The initial Pages deployment succeeded and the public page passed browser checks at 360px, 768px, and 1440px, including keyboard navigation, disabled JavaScript, and reduced motion. Deployed page, stylesheet, and icon matched the reviewed source.
+The redesign is checked at phone, tablet, and desktop widths for content, image loading, filter behavior, keyboard navigation, sticky-header anchor placement, disabled JavaScript, and reduced motion. Successful publication is verified through GitHub Pages and live browser checks.
 
 The workflow follows GitHub's [custom Pages workflow documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
 
