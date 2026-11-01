@@ -29,3 +29,10 @@ An icon grid benefits from plain text labels: a visitor should not need to recog
 A portfolio should quickly answer who the developer is, what they can show, and how to contact them. Keeping important information early and using plain section headings helps visitors scan. A smaller avatar and consistent project rows leave more room for readable descriptions and direct source links.
 
 Research is a reason for a design decision, not proof that a particular site improves hiring outcomes. Preserve honest project limitations and distinguish working previews, prototypes, and concept artwork. Browser checks confirm layout and interactions; they do not prove every external application's features work.
+
+
+## Theme changes that include the whole page
+
+CSS color variables let one theme change update text, borders, buttons, and cards together. Applying the saved preference before the page renders avoids a flash of the wrong theme. Browser storage can be blocked, so saving a preference must never stop the switch from working.
+
+View Transitions capture the old and new page. An expanding circular mask reveals the new snapshot from the theme button, so the animation includes actual content. Its radius reaches the farthest viewport corner, allowing the same effect to cover desktop and phone screens. The completed animation must release its snapshot before another transition starts. Reduced-motion preferences take priority over decorative effects.

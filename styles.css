@@ -8,6 +8,47 @@
   --line: #dce3db;
   --page-width: 1120px;
 }
+/* Shared color tokens keep both themes consistent across every section. */
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #131b18;
+  --ink: #e6eee8;
+  --muted: #a5b6ab;
+  --teal: #8cdbb5;
+  --mint: #1d2e25;
+  --line: #34463b;
+}
+::view-transition-old(root), ::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+::view-transition-new(root) { z-index: 1; }
+.theme-toggle {
+  display: grid;
+  place-items: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+  color: var(--muted);
+  cursor: pointer;
+}
+.theme-toggle:hover { background: var(--mint); color: var(--teal); border-color: var(--teal); }
+:root[data-theme="dark"] .button-primary { color: #13271c; }
+:root[data-theme="dark"] .button-primary:hover { background: #afe9cb; }
+:root[data-theme="dark"] .tags li,
+:root[data-theme="dark"] .project-links .secondary-link,
+:root[data-theme="dark"] .education-card > p:not(.eyebrow),
+:root[data-theme="dark"] .education-year { color: var(--muted); }
+:root[data-theme="dark"] .button-outline,
+:root[data-theme="dark"] .profile-focus,
+:root[data-theme="dark"] .education-bottom,
+:root[data-theme="dark"] .contact-section,
+:root[data-theme="dark"] .project-filters button[aria-pressed="true"] { border-color: var(--line); }
+:root[data-theme="dark"] .stack-icon { background: #e9f3eb; }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
 html { scroll-behavior: smooth; scroll-padding-top: 112px; }
@@ -125,7 +166,8 @@ h2 { font-size: 34px; letter-spacing: -1.1px; font-weight: 650; margin-bottom: 0
   .header-inner { flex-wrap: wrap; gap: 8px; padding: 12px 20px 0; }
   .brand-name { font-size: 18px; }
   .brand-role { font-size: 11px; }
-  nav { width: 100%; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); }
+  .theme-toggle { order: 0; }
+  nav { order: 1; width: 100%; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); }
   nav a { font-size: 13px; }
   .hero { grid-template-columns: 1fr; padding: 36px 20px; gap: 28px; }
   h1 { font-size: clamp(36px, 9vw, 49px); letter-spacing: -1.6px; }

@@ -1,6 +1,6 @@
 # Marvin Builds — Marvin Laurence Burgos
 
-A responsive student-developer portfolio built with HTML, CSS, and a small vanilla JavaScript enhancement for project filtering. It presents personal and academic projects through a compact introduction, readable project rows, top navigation, and custom project cover illustrations.
+A responsive student-developer portfolio built with HTML, CSS, and small vanilla JavaScript enhancements for project filtering and theme switching. It presents personal and academic projects through a compact introduction, readable project rows, top navigation, and custom project cover illustrations.
 
 Design decisions and their primary sources are documented in [recruiter design research](docs/recruiter-design-research.md).
 
@@ -14,11 +14,13 @@ python3 -m http.server 4175 --bind 127.0.0.1
 
 Open <http://127.0.0.1:4175>. Stop the server with Ctrl+C.
 
+The header theme button switches between mint light and charcoal dark themes with a smooth circular reveal expanding from the theme button. The choice is saved in this browser. First visits follow the device theme. Reduced-motion settings and browsers without View Transitions use an immediate switch.
+
 ## Update the content
 
 - Edit `index.html` to change the introduction, project descriptions, skills, and links.
 - Edit `styles.css` to change colors, spacing, typography, and responsive layouts.
-- Edit `script.js` to change the progressive project-filter behavior. All projects and native navigation remain available when JavaScript is disabled.
+- Edit `script.js` to change project filtering, saved theme selection, and the circular reveal transition. All projects and native navigation remain available when JavaScript is disabled.
 - Replace image files in `assets/` and `assets/projects/` when updating the profile portrait or project covers.
 - Edit the four `.stack-group` lists in `index.html` to update Frontend, Backend & Hosting, Tools, and Storage. Stack icons are local SVG assets; see [icon sources](docs/stack-icons.md).
 - Keep project descriptions accurate and link only to real destinations. The email action opens the visitor's mail application; there is no contact-form backend.
