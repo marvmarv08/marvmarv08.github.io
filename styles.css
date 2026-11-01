@@ -18,12 +18,21 @@
   --mint: #1d2e25;
   --line: #34463b;
 }
-::view-transition-old(root), ::view-transition-new(root) {
-  animation: none;
-  mix-blend-mode: normal;
+.theme-ready :where(body, .site-header, a, button, .profile-card, .education-card,
+  .stack-icon, .contact-section, .project-cover, .tags li, p, h1, h2, h3, .accent,
+  .profile-focus, .education-bottom, .education-year, .cover-arrow) {
+  transition: background-color 250ms ease, color 250ms ease, border-color 250ms ease;
 }
-::view-transition-old(root) { z-index: 2; opacity: 0; }
-::view-transition-new(root) { z-index: 1; }
+.theme-particle {
+  position: fixed;
+  z-index: 40;
+  width: 3px;
+  height: 3px;
+  margin: -1.5px 0 0 -1.5px;
+  border-radius: 1px;
+  background: var(--teal);
+  pointer-events: none;
+}
 .theme-toggle {
   display: grid;
   place-items: center;

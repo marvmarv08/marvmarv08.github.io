@@ -14,13 +14,13 @@ python3 -m http.server 4175 --bind 127.0.0.1
 
 Open <http://127.0.0.1:4175>. Stop the server with Ctrl+C.
 
-The header theme button switches between mint light and charcoal dark themes with a particle-collapse effect: the previous theme breaks into shrinking, tumbling fragments over the new theme. The choice is saved in this browser. First visits follow the device theme. Reduced-motion settings and browsers without View Transitions use an immediate switch.
+The header theme button switches between mint light and charcoal dark themes with a short color fade and ten small particles collapsing into the button. Text and cards stay in place. The choice is saved in this browser. First visits follow the device theme. Reduced-motion settings use an immediate switch without particles.
 
 ## Update the content
 
 - Edit `index.html` to change the introduction, project descriptions, skills, and links.
 - Edit `styles.css` to change colors, spacing, typography, and responsive layouts.
-- Edit `script.js` to change project filtering, saved theme selection, and the particle-collapse transition. All projects and native navigation remain available when JavaScript is disabled.
+- Edit `script.js` to change project filtering, saved theme selection, and the theme transition. All projects and native navigation remain available when JavaScript is disabled.
 - Replace image files in `assets/` and `assets/projects/` when updating the profile portrait or project covers.
 - Edit the four `.stack-group` lists in `index.html` to update Frontend, Backend & Hosting, Tools, and Storage. Stack icons are local SVG assets; see [icon sources](docs/stack-icons.md).
 - Keep project descriptions accurate and link only to real destinations. The email action opens the visitor's mail application; there is no contact-form backend.
